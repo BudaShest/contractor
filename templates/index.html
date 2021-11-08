@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <title>Великий сокращатель | О нас</title>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col main-text">
+        <h1>Великий сокращатель</h1>
+        <p class="offer">Начните сокращать ссылки вместе с <a href="">Великий сокращатель</a> уже сейчас!</p>
+    </div>
+    <div class="col">
+        <img class="banner" src={{ url_for('static', filename="img/sciccors.png") }} alt="">
+    </div>
+</div>
+
+<div class="row">
+    <a href="http://127.0.0.1:5000/login_page" class="btn">Войти</a>
+    <a href="http://127.0.0.1:5000/register_page" class="btn">Зарегистрироваться</a>
+</div>
+{% endblock %}

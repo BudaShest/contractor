@@ -1,0 +1,108 @@
+*,*:after,*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    background-color: lightgrey;
+    padding:12px 30px;
+}
+
+form{
+    background-color: lightgrey;
+    border:20px solid #737373;
+    border-radius: 100px;
+    margin: 30px 0;
+}
+form fieldset{
+    margin:14px 0;
+    border: none;
+    border-bottom: 8px solid #737373;
+    padding: 20px;
+
+}
+fieldset input,fieldset select{
+    font-size: 18px;
+    margin: 10px;
+    background-color: lightgrey;
+    border: none;
+    border: 2px solid grey;
+    padding: 10px;
+    transition:all 0.3s ease-out;
+}
+fieldset input:active, fieldset select:active{
+    background-color: snow;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: 120px 1fr 170px;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    width:100%;
+    max-width: 1024px;
+}
+
+.header{
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/7;
+    background-color: black;
+}
+.logo-container{
+    width: 100%;
+    max-width: 320px;
+    justify-content: space-between;
+    height: 90px;
+}
+.logo-container img{
+    max-height: 100%;
+}
+.logo-text{
+    color: white;
+    font-size: 2em;
+}
+
+.main{
+    justify-content: center;
+    grid-column: 2/6;
+}
+.main>.container{
+    padding: 14px;
+}
+.main-text{
+    justify-content: center;
+}
+.offer{
+    font-size: 1.3em;
+    margin: 14px;
+}
+.banner{
+    max-height: 400px;
+    transform: rotate(-30deg)
+}
+
+.footer{
+    justify-content: center;
+    background-color: lightgrey;
+    color: #8a8a8a;
+    grid-column: 1/7;
+}

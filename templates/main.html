@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <title>Великий сокращатель</title>
+    <script defer src={{ url_for('static', filename='scripts/script.js') }}></script>
+{% endblock %}
+
+{% block content %}
+<form name="loginForm" id="login-form" class="container" action="">
+    <fieldset class="col">
+        <label for="">Короткое url:</label>
+        <input type="text">
+    </fieldset>
+    <fieldset class="col">
+        <label for="">Оригинальное url:</label>
+        <input type="text">
+    </fieldset>
+    <fieldset class="col">
+        <label for="">Текстовый псевдоним</label>
+        <input type="text">
+    </fieldset>
+    <fieldset class="col">
+        <select name="" id="">
+            <option value="">Публчиная</option>
+            <option value="">Приватная</option>
+            <option value="">Частная</option>
+        </select>
+        <input type="text">
+    </fieldset>
+    <div class="row">
+        <button type="submit" class="btn">Создать</button>
+        <button type="reset" class="btn">Очистить</button>
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <title>Великий сокращатель | Регистрация</title>
+    <script defer src={{ url_for('static', filename='scripts/script.js') }}></script>
+{% endblock %}
+
+{% block content %}
+<form name="registerForm" id="register-form" class="container" action="">
+    <fieldset class="col">
+        <label for="login">Логин:</label>
+        <input name="login" id="login" type="text" placeholder="Введите логин">
+    </fieldset>
+    <fieldset class="col">
+        <label for="password">Пароль:</label>
+        <input name="password" id="password" type="password" placeholder="Введите пароль">
+    </fieldset>
+    <fieldset class="col">
+        <label for="password">Повторите пароль:</label>
+        <input name="confirmPassword" id="confirm-password" type="password" placeholder="Повторите пароль">
+    </fieldset>
+    <div class="row">
+        <button type="submit" class="btn">Войти</button>
+        <button type="reset" class="btn">Стереть</button>
+    </div>
+</form>
+{% endblock %}

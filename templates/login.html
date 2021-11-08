@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <title>Великий сокращатель | Логин</title>
+    <script defer src={{ url_for('static', filename='scripts/script.js') }}></script>
+{% endblock %}
+
+
+
+{% block content %}
+<form name="loginForm" id="login-form" class="container" action="">
+    <fieldset class="col">
+        <label for="login">Логин:</label>
+        <input name="login" id="login" type="text" placeholder="Введите логин">
+    </fieldset>
+    <fieldset class="col">
+        <label for="password">Пароль:</label>
+        <input name="password" id="password" type="text" placeholder="Введите пароль">
+    </fieldset>
+    <div class="row">
+        <button type="submit" class="btn">Войти</button>
+        <button type="reset" class="btn">Стереть</button>
+    </div>
+</form>
+{% endblock %}
+
+
