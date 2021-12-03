@@ -1,0 +1,21 @@
+.linksContainer{
+    min-height: 400px;
+}
+.filterRow{
+    justify-content: space-evenly;
+}
+.filterBadge{
+    width: 120px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 14px;
+    background-color: #540022;
+    color:white;
+    transition: all 0.3s ease-out;
+
+}
+.filterBadgeActive{
+    background-color: #ff0066;
+    color:white;
+
+}
